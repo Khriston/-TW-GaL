@@ -21,7 +21,7 @@ function slideshow() {
 			slideshowImages[slideNo];
 		document.getElementById("slide").querySelector("img").alt =
 			slideshowDescriptions[slideNo];
-		document.getElementById("slide").querySelector("h2").innerHTML = 
+		document.getElementById("slide").querySelector("img").innerHTML = 
 			slideshowHeaders[slideNo];
 		slide.classList.remove("fadeOut");
 	}, 1600);
