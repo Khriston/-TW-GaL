@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
 	<meta name="description" content="A website meant for new players into learning the game of Backgammon"/>
-	<!-- Icon obtained from: https://www.isw-online.de/praesident-trump-vs-privacy-shield/  -->
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 
