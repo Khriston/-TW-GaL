@@ -50,14 +50,6 @@
         <label>E-mail*:</label>
         <input type="text" required id="registerEmail" placeholder="Enter your E-mail" name="email" />
     </div>
-    <div>
-        <label>Age:</label>
-        <input type="number" id="registerAge" placeholder="Enter your age" name="age"/>
-    </div>
-    <div>
-        <label>Sex:</label>
-        <input type="text" id="registerSex" placeholder="Enter your sex" name="sex"/>
-    </div>
     <p id="required">All fields with * are required for register.</p>
     <button type="submit">Register</button>
     </form>
