@@ -18,7 +18,6 @@
 
 	<main>
 		<section class="slideshow-container">
-			<!-- Image source: https://www.telindus.nl/mircosegmentatie-software-defined-datacenter/ -->
 			<div id="slide">
 				<h2>Time to learn.</h2>
 				<img src="images/slide1.jpg"/>
