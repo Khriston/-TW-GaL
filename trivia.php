@@ -27,11 +27,11 @@
     ?>
 
 	<main class="quiz">
-		<h2>Trivia game:</h2>
+		<h2>Backgaquiz:</h2>
 
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Test yout knowledge:</h1>
 		
 		<form action="grade.php" method="post" id="quiz">
 		
