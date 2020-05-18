@@ -113,9 +113,8 @@
             }
 
 
-			$password = md5($password1);//encrypt the password before saving in the database
 
-			$query = "INSERT INTO backgammon (ID,Name, Password, Email,Score) VALUES (NULL,'$username','$password', '$email', NULL)";
+			$query = "INSERT INTO backgammon (ID,Name, Password, Email,Score) VALUES (NULL,'$username','$password1', '$email', NULL)";
 			mysqli_query($db, $query);
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are now logged in";
