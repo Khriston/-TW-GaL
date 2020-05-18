@@ -17,28 +17,28 @@
 		}
 	?>
 </head>
-
 <body>
 	<?php 
         include("Header.php"); 
         include("Navbar.php");
     ?>
-
-	<main>
-		<section class="facilities">
-		Don't hesitate to contact us at:
-		<ul>
-		<li><i>constantin.iacob@info.uaic.ro</i>, +407phonenumber - <b>Iacob Constantin-Cristian</b></li>
-		<li><i>tudor.gradinariu@info,uaic.ro</i>, +407phonenumber - <b>Gradinariu Tudor</b></li>
-		</ul>
-		</section>
-
-		<aside>
-		</aside>
-	</main>
 	
 
 	<?php
+		include 'connect.php';
+		$db = OpenCon();
+		$id = $_SESSION['id'];
+		$query = "SELECT * FROM backgammon where id='".$id."'";
+		$result = $db->query($query);
+
+		if ($result->num_rows > 0) {
+			$row = $result->fetch_assoc();
+			echo "<h2>Name: ".$row["ID"].". ".$row["Name"]."";
+			echo "<br>";
+			echo "Email adress: ".$row["Email"]."";
+			echo "<br>";
+			echo "Your quiz score: ".$row["Score"]."</h2>";
+		}
 		include("Footer.php");
 	?>
 </body>
