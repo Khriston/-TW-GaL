@@ -23,20 +23,20 @@ html {
 }
 
 @media(min-width: 780px) {
-	.facilities {
+	.paragraphs {
 		width: 780px;
 	}
 }
 
-.facilities {
+.paragraphs {
 	margin-left: 3%;
 	margin-right: 3%;
 }
 
 
 html, body {
-	margin: 0;
-	padding: 0;
+	margin: 10;
+	padding: 10;
 	overflow-x: hidden;
 }
 
@@ -74,6 +74,8 @@ html, body {
 	grid-template-rows: 100%;
 	grid-template-columns: 10% 90%;
 	align-items: center;
+	margin: 10;
+	padding:10;
 	grid-gap: 1.5em;
 }
 
@@ -517,85 +519,6 @@ main {}
 /* -------------- SECTION SLIDESHOW END -------------- */
 
 
-
-/* -------------- SOFTWARE VULNERABILITIES START -------------- */
-@media(min-width:900px){
-#softvuln{
-    text-align: center;
-}
-
-#filter{
-    grid-row: 1;
-    margin: 1em;
-    padding: 1em;
-    border: 1px solid;
-    background-color: #333333;
-    color: white;
-    min-width: 150px;
-}
-
-#filter ul li{
-    margin: 0;
-  list-style: none;
-}
-
-#vuln{
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1%;
-    padding: 1em;
-    width: 90%;
-    background-color: #333333;
-    color: white;
-}
-.search{
-    width: 70%;
-    padding: 1em;
-    margin-right: auto;
-    margin-left: auto;
-}
-.search img{
-    width: 3em;
-    height: 3em;
-    float: left;
-    margin: 0.1em;
-}
-.search button{
-    width: 13%;
-    height: 4em;
-    background-color: white;
-    border: 1px solid darkgray;
-}
-.search button:hover{
-    background-color: darkgray;
-    border: 1px solid white;
-}
-
-
-.vulnerabilitate{
-    display: grid;
-    grid-template-columns: 10% 5% 5% 5% 35% 20% 20%;
-}
-.vulnerabilitate div{
-    text-align: center;
-    vertical-align:  center;
-    height: 2em;
-    background-color: darkgray;
-    border: 1px solid white;
-}
-}
-
-@media(max-width:900px){
-    #filter{
-        left: -1000px;
-    }
-}
-
-/* -------------- SOFTWARE VULNERABILITIES START -------------- */
-
-
-
 /* -------------- FOOTER START -------------- */
 footer {
 	display: flex;
@@ -613,54 +536,52 @@ footer p {
 }
 /* -------------- FOOTER END -------------- */
 
-/* -------------- searchResults START -------------- */
-
-.searchResults {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/* ------------- TEXT AND IMAGES PAGES ---------- */
+@media(min-width: 780px) {
+	.facilities {
+		width: 780px;
+	}
 }
 
-.searchResults div:first-child {
-    margin-top: 1em;
-    font-size: 2em;
+.facilities {
+	margin-left: 3%;
+	margin-right: 3%;
+}
+/* ------------- TEXT AND IMAGES PAGES END ---------- */
+
+/* ------------- QUIZ ---------- */
+
+.trivia{
+	*					{ margin: 0; padding: 0; }
+body				{ font: 14px Georgia, serif;}
+
+#page-wrap		    { width: 500px; margin: 0 auto; }
+
+h1                  { margin: 25px 0; font: 14px Georgia, Serif; text-transform: uppercase; letter-spacing: 3px; }
+
+#quiz input {
+    vertical-align: middle;
 }
 
-.searchResults div:not(:first-child) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    border: 2px solid white;
-    border-radius: 1.5em;
-    margin: .7em 3em;
-    padding: 1em;
-    background-color: #333333;
-    color: white;
+#quiz ol {
+   margin: 0 0 10px 20px;
 }
 
-/* -------------- searchResults END -------------- */
-
-/* -------------- resultsHaveIBeenPwned START -------------- */
-.main_pwnd {
-	display: flex;
-	justify-content: center;
+#quiz ol li {
+   margin: 0 0 20px 0;
 }
 
-.main_pwnd.facilities h2, .main_pwnd.facilities p, .main_pwnd.facilities form {
-	display: flex;
-	justify-content: center;
-	flex-flow: row wrap;
-	overflow: visible;
+#quiz ol li div {
+   padding: 4px 0;
 }
 
-main.results_pwnd {
-	background-color: black;
-	color: white;
-	margin-top: 3em;
-	padding: 3em; 
-	border-radius: 1em;
+#quiz h3 {
+   font-size: 17px; margin: 0 0 1px 0; color: #666;
 }
-/* -------------- resultsHaveIBeenPwned END -------------- */
+
+#results {
+    font: 44px Georgia, Serif;
+}
+}
+/* ------------- QUIZ END ---------- */
 

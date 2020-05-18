@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html lang="en-US">
 
 <head lang="en-US">
 	<title>Backgammon</title>

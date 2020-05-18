@@ -26,10 +26,8 @@
         include("Navbar.php");
     ?>
 
-	<main class="quiz">
+	<main class="paragraphs">
 		<h2>Backgaquiz:</h2>
-
-	<div id="page-wrap">
 
 		<h1>Test yout knowledge:</h1>
 		
@@ -172,8 +170,7 @@
             <input type="submit" value="Submit Quiz" />
 		
 		</form>
-	
-	</div>
+
 	
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

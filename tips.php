@@ -25,7 +25,7 @@
         include("Navbar.php");
     ?>
 
-	<main class="rules">
+	<main class="paragraphs">
 		<h2>Ofthen made mistakes:</h2>
 			<l>
 				<p>1. Running from the rear when behind in a race.</p>
@@ -39,7 +39,7 @@
 				<p>9. Playing ultra-safe, especially in the opening.</p>
 				<p>10. Not Minimizing shots when it would be dangerous to be hit.</p>
 			</l>
-		<img src="images/tips.jpg"/>
+		<img src="images/tips.jpg" width="600" height="400"/>
 			
 	</main>
 

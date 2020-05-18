@@ -25,7 +25,7 @@
         include("Navbar.php");
     ?>
 
-	<main class="rules">
+	<main class="paragraphs">
 			<h2>Equipement:</h2>
 			
 			<p>The game is played by two players each, with fifteen checkers of his own color.
