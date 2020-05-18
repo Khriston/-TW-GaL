@@ -61,54 +61,68 @@
 
     <?php
         function register(){
-            $conn = new mysqli("localhost","root","","proiect");
-            $username = $_POST['user'];
-            $email = $_POST['email'];
-            $result = $conn->query("select id from user where username='".$username."'");
-            if ($result->num_rows > 0){
+			$username = "";
+			$email    = "";
+			$errors = array(); 
+			include 'connect.php';
+			$db = OpenCon();
+
+
+			// receive all input values from the form
+			$username = $_POST['user'];
+			$email = $_POST['email'];
+			$password1 = $_POST['password1'];
+			$password2 = $_POST['password2'];
+
+			// form validation: ensure that the form is correctly filled ...
+			// by adding (array_push()) corresponding error unto $errors array
+			if (empty($username)) { 
                 echo '<div style="text-align: center;
-                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">Username exists!</div';
-                return;
-            }
-            $result = $conn->query("select id from user where email='".$email."'");
-            if ($result->num_rows > 0){
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">
+					Username is requierd!</div';		
+					}
+			if (empty($email)) { 
                 echo '<div style="text-align: center;
-                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">Email exists!</div>';
-                return;
-            }
-            $password1 = $_POST['password1'];
-            $password2 = $_POST['password2'];
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">
+					Email is required!</div';		
+					}
+			if (empty($password1)) { 
+                echo '<div style="text-align: center;
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red"> 
+                    Passwords is requierd';	
+					}
             if ($password1 != $password2){
                 echo '<div style="text-align: center;
                     margin-top: 5%;font-weight: bold;font-size:30px;color: red"> 
                     Passwords does not match! </div>';
                 return;
             }
-            if ($_POST['age'] != ''){
-                $age = "'" .$_POST['age']. "'";
+			$result = $db->query("select id from backgammon where name='".$username."'");
+            if ($result->num_rows > 0){
+                echo '<div style="text-align: center;
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">
+					Username exists!</div';
+                return;
             }
-            else{
-                $age = 'NULL';
+            $result = $db->query("select id from backgammon where email='".$email."'");
+            if ($result->num_rows > 0){
+                echo '<div style="text-align: center;
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">E
+					mail exists!</div>';
+                return;
             }
-            if ($_POST['sex'] != ''){
-                $sex = $_POST['sex'];
-            }
-            else{
-                $sex = 'NULL';
-            }
-            $result = $conn->query("select max(id) from user");
-            $id = $result->fetch_assoc();
-            $id = $id['max(id)'] + 1;
-            $values = $id.",'".$username."','".$password1."','".$email."',".$age.",".$sex.")";
-            $conn->query("insert into user values (" .$values );
-
-            echo '<div style="text-align: center;
-                    margin-top: 5%;font-weight: bold;font-size:30px;">
-                    Registered succesfully!</div>';
-        }
 
 
+			$password = md5($password1);//encrypt the password before saving in the database
 
+			$query = "INSERT INTO backgammon (ID,Name, Password, Email,Score) VALUES (NULL,'$username','$password', '$email', NULL)";
+			mysqli_query($db, $query);
+			$_SESSION['username'] = $username;
+			$_SESSION['success'] = "You are now logged in";
+			header('location: index.php');
+
+
+		}
         include("Footer.php");
     ?>
 </body>
