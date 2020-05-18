@@ -48,8 +48,20 @@
             if ($answer4 == "D") { $totalCorrect++; }
             if ($answer5 == "A") { $totalCorrect++; }
             
-            echo "<div id='results'>$totalCorrect / 5 correct</div>";
-            
+ 
+            include 'connect.php';
+
+			
+			if(isset($_SESSION['id']) && isset($_SESSION['user'])){	
+				$db = OpenCon();
+                $id = $_SESSION['id'];
+                $user = $_SESSION['user'];
+				$query = "UPDATE backgammon SET Score='$totalCorrect' where id='$id' and name='$user'";
+				mysqli_query($db, $query);
+            }
+			
+			echo "<div id='results'>$totalCorrect / 5 correct</div>";
+			
         ?>
 	
 	</div>
