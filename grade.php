@@ -42,11 +42,11 @@
         
             $totalCorrect = 0;
             
-            if ($answer1 == "B") { $totalCorrect++; }
-            if ($answer2 == "A") { $totalCorrect++; }
+            if ($answer1 == "A") { $totalCorrect++; }
+            if ($answer2 == "B") { $totalCorrect++; }
             if ($answer3 == "C") { $totalCorrect++; }
             if ($answer4 == "D") { $totalCorrect++; }
-            if ($answer5) { $totalCorrect++; }
+            if ($answer5 == "A") { $totalCorrect++; }
             
             echo "<div id='results'>$totalCorrect / 5 correct</div>";
             
