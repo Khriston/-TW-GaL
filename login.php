@@ -52,19 +52,18 @@
 
     <?php
         function login(){
+			include 'connect.php';
+			$db = OpenCon();
             $user = $_POST['user'];
             $password = $_POST['password'];
-            $conn = new mysqli("localhost","root","","proiect");
-            if ($conn->connect_error) {
-                die("Connection failed: " . $conn->connect_error);
-            }
-            $result = $conn->query("select id from user where username='".$user."' and password='".$password."'");
+			
+            $result = $db->query("select id from backgammon where name='".$user."' and password='".$password."'");
             if ($result->num_rows > 0){
                 $id = $result->fetch_assoc();
                 $id = $id['id'];
                 $_SESSION['id'] = $id;
                 $_SESSION['user'] = $user;
-                header("Location: http://localhost/Web-Tehnologies-2018-2019/application/index.php"); /* Redirect browser */
+                header("Location: http://localhost/master/index.php"); /* Redirect browser */
                 exit();
 
             } else{
@@ -74,7 +73,7 @@
                     Login failed!<br>User or password incorrect!</div>';
             }
 
-            $conn->close();
+            CloseCon($db);
             
         }
 
