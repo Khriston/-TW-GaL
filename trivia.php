@@ -8,9 +8,7 @@
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
 	<meta name="description" content="A brief history of the game."/>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
-	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
-	<link rel="stylesheet" href="aboutstylesheet.css" type="text/css"/>
-	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 	<?php
 		session_start();
@@ -26,8 +24,10 @@
         include("Navbar.php");
     ?>
 
-	<main class="paragraphs">
+	<main class="quiz">
 		<h2>Backgaquiz:</h2>
+
+	<div id="page-wrap">
 
 		<h1>Test yout knowledge:</h1>
 		
@@ -170,7 +170,8 @@
             <input type="submit" value="Submit Quiz" />
 		
 		</form>
-
+	
+	</div>
 	
 	<script type="text/javascript">
 	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

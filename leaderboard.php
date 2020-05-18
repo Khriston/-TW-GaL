@@ -26,11 +26,47 @@
     ?>
 
 	<main class="rules">
-		<h2>RSS data thing:</h2>
+		<h2>RSS data thing: <a type="application/rss+xml" href="http://localhost/master/rssfactory.php"> 
+			RSS feed for this page </a></h2>
+		
 			
 	</main>
+	<style>
+		table {
+		  font-family: arial, sans-serif;
+		  border-collapse: collapse;
+		  width: 90%;
+		  margin-left:auto; 
+		  margin-right:auto;
+		}
 
+		td, th {
+		  border: 1px solid #dddddd;
+		  text-align: center;
+		  padding: 8px;
+		}
+
+		tr:nth-child(even) {
+		  background-color: #dddddd;
+		}
+	</style>
 	<?php
+		include 'connect.php';
+		$db = OpenCon();
+		
+		$query = "SELECT * FROM backgammon";
+		$result = $db->query($query);
+
+		if ($result->num_rows > 0) {
+		  echo "<table><tr><th>ID</th><th>Name</th><th>Email</th><th>Score</th></tr>";
+		  // output data of each row
+		  while($row = $result->fetch_assoc()) {
+			echo "<tr><td>".$row["ID"]."</td><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td> ".$row["Score"]."</td></tr>";
+		  }
+		  echo "</table>";
+		} else {
+		  echo "0 results";
+		}
 		include("Footer.php");
 	?>
 </body>
