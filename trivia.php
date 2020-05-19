@@ -25,13 +25,13 @@
     ?>
 
 	<main class="quiz">
-		<h2>Backgaquiz:</h2>
+		<h1>Backgaquiz:</h1>
 
 	<div id="page-wrap">
 
-		<h1>Test yout knowledge:</h1>
+		<h2>Test yout knowledge!</h2>
 		
-		<form action="grade.php" method="post" id="quiz">
+		<form action="grade.php" method="post" id="quiz" style="float:left; width:60%; padding:0 20px;">
 		
             <ol>
             

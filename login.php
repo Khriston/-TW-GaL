@@ -63,7 +63,7 @@
                 $id = $id['id'];
                 $_SESSION['id'] = $id;
                 $_SESSION['user'] = $user;
-                header("Location: http://localhost/master/index.php"); /* Redirect browser */
+                header("Location: http://localhost/TWGAL/index.php"); /* Redirect browser */
                 exit();
 
             } else{

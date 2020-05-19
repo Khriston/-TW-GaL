@@ -25,14 +25,16 @@
     ?>
 
 	<main>
-		<section class="facilities">
+		<section class="paragraphs">
 		Don't hesitate to contact us at:
 		<ul>
 		<li><i>constantin.iacob@info.uaic.ro</i>, +407phonenumber - <b>Iacob Constantin-Cristian</b></li>
 		<li><i>tudor.gradinariu@info,uaic.ro</i>, +407phonenumber - <b>Gradinariu Tudor</b></li>
 		</ul>
+		
+		<h3> The arhitecture:</h3>
+		<img src="images/arhitectura.jpg"/>
 		</section>
-
 		<aside>
 		</aside>
 	</main>

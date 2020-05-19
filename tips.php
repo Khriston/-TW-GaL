@@ -39,7 +39,7 @@
 				<p>9. Playing ultra-safe, especially in the opening.</p>
 				<p>10. Not Minimizing shots when it would be dangerous to be hit.</p>
 			</l>
-		<img src="images/tips.jpg" width="600" height="400"/>
+		<img src="images/tips.jpg" width="600" height="400" style="max-width:100%;"/>
 			
 	</main>
 
