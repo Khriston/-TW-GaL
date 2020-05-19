@@ -26,7 +26,7 @@
     ?>
 
 	<main class="rules">
-		<h2>RSS data thing: <a type="application/rss+xml" href="http://localhost/master/rssfactory.php"> 
+		<h2>Quiz Leaderboard: <a type="application/rss+xml" href="http://localhost/master/rssfactory.php"> 
 			RSS feed for this page </a></h2>
 		
 			
