@@ -26,30 +26,26 @@
 			<img src="images/admin.png" alt="imagine">
 	</div>
 	<div class="top">
-	<h1>Update Entry</h1>
+	<h1>Insert</h1>
 	</div>
     <main class="lmain">
 			<form class="login" method="post"> 
 				<div id=updateId>
 					<label >Id:</label>
-					<input type="text" required placeholder="Id where you want to update" name="updateId" />
+					<input type="text" required placeholder="Id" name="updateId" />
 				</div>
 				<br>
 				<div id=updateName>
 					<label >Name:</label>
-					<input type="text" required placeholder="Enter your name" name="updateName"/>
+					<input type="text" required placeholder="Name" name="updateName"/>
 				</div>
 				<div id=updatePassword>
 					<label >Password:</label>
-					<input type="password" required placeholder="Enter your password" name="updatePassword"/>
+					<input type="password" required placeholder="Password" name="updatePassword"/>
 				</div>
 				<div id=updateEmail>
 					<label >Email:</label>
-					<input type="email" required placeholder="Enter your email" name="updateEmail"/>
-				</div>
-				<div id=updateScore>
-					<label >Score:</label>
-					<input type="text" required placeholder="Enter your score" name="updateScore"/>
+					<input type="email" required placeholder="Email" name="updateEmail"/>
 				</div>
 
 				<button type="submit" id="update">Update</button>
@@ -60,29 +56,20 @@
     <?php
 		include 'connect.php';
 		$db = OpenCon();
-		if(isset($_POST['updateId']))
+		if(issset($_POST['updateId']) && isset($_POST['updateId']) && isset($_POST['updateName']) && isset($_POST['updatePassword']) && isset($_POST['updateEmail'])){
 			$id = $_POST['updateId'];
-		if(isset($_POST['updateName'])){
             $name = $_POST['updateName'];
-			$query = "UPDATE backgammon SET Name = '".$name."' where Id = '".$id."'";
-			mysqli_query($db, $query);
-			}
-		if(isset($_POST['updatePassword'])){
 			$password = $_POST['updatePassword'];
-			$query = "UPDATE backgammon SET Password = '".$password."'  where Id='".$id."'";
-			mysqli_query($db, $query);
-			}
-		if(isset($_POST['updateEmail'])){
 			$email = $_POST['updateEmail'];
-			$query = "UPDATE backgammon SET Email = '".$email."'  where Id='".$id."'";
+			$query = "INSERT INTO backgammon (ID,Name,PAssword,Email,Score,rights) VALUES (NULL,".$name.",".$password.",".$email.")";
 			mysqli_query($db, $query);
 			}
-		if(isset($_POST['updateScore'])){
-			$score = $_POST['updateScore'];
-			$query = "UPDATE backgammon SET Score = '".$score."'  where Id='".$id."'";
-			mysqli_query($db, $query);
+			else{
+				$message = "Delete failed!\nNot all necessary information provided!";
+                echo '<div style="text-align: center;
+                    margin-top: 5%;font-weight: bold;font-size:30px;color: red">
+                    Delete failed!<br>Not all necessary information provided!</div>';
 			}
-			
         include("Footer.php");
     ?>
 </body>
