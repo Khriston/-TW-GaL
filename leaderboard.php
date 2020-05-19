@@ -54,7 +54,7 @@
 		include 'connect.php';
 		$db = OpenCon();
 		
-		$query = "SELECT * FROM backgammon";
+		$query = "SELECT * FROM backgammon order by 5 desc";
 		$result = $db->query($query);
 
 		if ($result->num_rows > 0) {
