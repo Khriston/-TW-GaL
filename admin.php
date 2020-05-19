@@ -34,7 +34,6 @@
 		  <a href="update.php">Update</a>
 		  <a href="delete.php">Delete</a>
 		  <a href="insert.php">Insert</a>
-		  <a href="index.php">Back</a>
 		</div>
 		<br />
 </body>
