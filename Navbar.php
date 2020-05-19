@@ -20,6 +20,9 @@
                 $this->navURLs[] = 'logout.php';
                 $this->navURLName[] = $_SESSION['user'];
                 $this->navURLName[] = 'Log Out';
+				if(isset($_SESSION['admin']))
+					$this->navURLs[] = 'admin.php';
+					$this->navURLName[] = 'Administration';
             }
             else{
                 $this->navURLs[] = 'login.php';

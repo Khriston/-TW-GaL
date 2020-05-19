@@ -57,9 +57,14 @@
             $user = $_POST['user'];
             $password = $_POST['password'];
 			
-            $result = $db->query("select id from backgammon where name='".$user."' and password='".$password."'");
+            $result = $db->query("select id, rights from backgammon where name='".$user."' and password='".$password."'");
             if ($result->num_rows > 0){
                 $id = $result->fetch_assoc();
+				if($id[1] = 1){
+					$_SESSION['admin'] = 1;
+				}else{
+					$_SESSION['admin'] = 0;
+				}
                 $id = $id['id'];
                 $_SESSION['id'] = $id;
                 $_SESSION['user'] = $user;
