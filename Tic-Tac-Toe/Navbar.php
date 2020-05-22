@@ -8,25 +8,25 @@
         /*
          * URLs present on the navbar
          */
-        private $navURLs = array("index.php", "Backgammon/indexB.php", "Tic-Tac-Toe/indexT.php", "Draughts/indexD.php", "contact.php");
+        private $navURLs = array("../index.php", "indexT.php", "history.php", "rules.php", "tips.php", "trivia.php", "leaderboard.php", "../contact.php");
         /* 
          * name of the URLs on the navbar (e.g for "index.php" the name is "Home")
          */ 
-        private $navURLName = array("Home", "Backgammon", "Tic-tac-Toe", "Draughts", "Contact");
+        private $navURLName = array("Home", "Main Page", "History", "Rules", "Tips", "Trivia", "Leaderboard", "Contact");
 
         public function __construct() {
             if(isset($_SESSION['id']) && isset($_SESSION['user'])){
-                $this->navURLs[] = 'user.php';
-                $this->navURLs[] = 'logout.php';
+                $this->navURLs[] = '../user.php';
+                $this->navURLs[] = '../logout.php';
                 $this->navURLName[] = $_SESSION['user'];
                 $this->navURLName[] = 'Log Out';
 				if(isset($_SESSION['admin']))
-					$this->navURLs[] = 'admin.php';
+					$this->navURLs[] = '../admin.php';
 					$this->navURLName[] = 'Administration';
             }
             else{
-                $this->navURLs[] = 'login.php';
-                $this->navURLs[] = 'makeaccount.php';
+                $this->navURLs[] = '../login.php';
+                $this->navURLs[] = '../makeaccount.php';
                 $this->navURLName[] = 'Login';
                 $this->navURLName[] = 'Create Account';   
             }

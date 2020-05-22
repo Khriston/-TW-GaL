@@ -5,7 +5,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
-	<meta name="description" content="A website meant for new players into learning the game of Backgammon"/>
+	<meta name="description" content="A website meant for new players into learning various games./>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<?php
@@ -36,7 +36,6 @@
 	<?php
 		include("Footer.php");
 	?>
-	<!-- Page ought to load fully before we attempt any dynamic modifications -->
 	<script src="script.js" type="text/javascript"></script>
 </body>
 
