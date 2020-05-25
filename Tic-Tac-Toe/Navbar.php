@@ -8,11 +8,11 @@
         /*
          * URLs present on the navbar
          */
-        private $navURLs = array("../index.php", "indexT.php", "history.php", "rules.php", "tips.php", "trivia.php", "leaderboard.php", "../contact.php");
+        private $navURLs = array("../index.php", "indexT.php", "history.php", "rules.php", "tips.php", "trivia.php", "leaderboard.php");
         /* 
          * name of the URLs on the navbar (e.g for "index.php" the name is "Home")
          */ 
-        private $navURLName = array("Home", "Main Page", "History", "Rules", "Tips", "Trivia", "Leaderboard", "Contact");
+        private $navURLName = array("Home", "Main Page", "History", "Rules", "Tips", "Trivia", "Leaderboard");
 
         public function __construct() {
             if(isset($_SESSION['id']) && isset($_SESSION['user'])){

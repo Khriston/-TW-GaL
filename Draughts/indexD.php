@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <head lang="en-US">
-	<title>Backgammon</title>
+	<title>Draughts</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
 	<meta name="description" content="A website meant for new players into learning the game of Tic-Tac-Toe"/>
-	<link rel="shortcut icon" href="imagesT/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="imagesD/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<?php
 		session_start();
@@ -25,7 +25,7 @@
 		<section class="slideshow-container">
 			<div id="slide">
 				<h2>Time to learn.</h2>
-				<img src="images/slide1.jpg"/>
+				<img src="imagesD/slide1.jpg"/>
 			</div>
 		</section>
 

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
 <head lang="en-US">
-	<title>Backgammon</title>
+	<title>GameIT</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
-	<meta name="description" content="A website meant for new players into learning various games./>
+	<meta name="description" content="A website meant for new players into learning various games."/>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<?php
