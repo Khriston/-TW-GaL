@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<link rel="stylesheet" href="aboutstylesheet.css" type="text/css"/>
 	<link rel="stylesheet" href="style.css" type="text/css"/>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
 </head>
 <?php
 		session_start();
@@ -30,7 +30,7 @@
 	<h2>Trivia game:</h2>
 	<div id="page-wrap">
 
-		<h1>Final Quiz for Lip building</h1>
+		<h1>Your score:</h1>
 		
         <?php
             
