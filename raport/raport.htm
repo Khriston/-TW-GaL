@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <title>GaL</title>
+    <link href="scolarly-style.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <article>
+        <header><h1>Raport - GameIT</h1></header>
+        <div role="contentinfo">
+            <ol role="directory">
+                <li><a href="#abstract">1. Abstract</a></li>
+                <li><a href="#introducere">2. Introducere</a></li>
+                <li><a href="#user-stories">3. User Stories</a></li>
+                <li><a href="#tehnologii">4. Tehnologii folosite</a></li>
+                <ol role="directory">
+                    <li><a href="#front-end">4.1 Front-end</a></li>
+                    <li><a href="#back-end">4.2 Back-end</a></li>
+                </ol>
+                <li><a href="#detalii">5. Detalii de inmplementare</a></li>
+                <ol role="directory">
+                    <li><a href="#arhitectura">5.1 Arhitectură</a></li>
+                    <li><a href=#detalii-bd>5.2 Schema bazei de date</a></li>
+                </ol>
+                <li><a href="#bibliografie">6. Referințe</a></li>
+            </ol>
+        </div>
+        
+        <section id="abstract" typeof="sa:Abstract" role="doc-abstract">
+            <h2>1. Abstract</h2>
+            <p>GameIT este o aplicație Web pentru a usura invatarea unuia dintre jocurile: Table, Dame și X și O. Acest document descrie arhitectura aplicației, funcționalitățile aplicației și tehnologiile folosite în cadrul procesului de dezvoltare.</p>
+        </section>
+        
+        <section id="introducere" role="doc-introduction">
+            <h2>2. Introducere</h2>
+            <p>Se pot găsi nenumărate turotiale pentru aceste jocuri pe internet, însă aplicația noatră web dispune și de o scurtă istorie a jocului, indicații pentru începători și un chestionar, pe dificultăți diferite, pentru testarea cunoștințelor.</p>
+            
+            <p>Obiectivele noastre sunt:</p>
+            <ul>
+                <li>Furnizarea unei modalități rapide și ușor de utilizat de învătare pentru jocurile menționate mai sus.</li>
+                <li>Oferirea unei modalități de testare a cunoștintelor.</li>
+                <li>Compatibilitatea deplină a aplicației cu Web browsere moderne.</li>
+            </ul>
+            
+            <p>Mai multe detalii se găsesc în <a href="#ref-proiecte">lista de proiecte</a>.</p>
+        </section>
+        
+        <section id="învătare">
+            <h2>3. Învătarea</h2>
+            <p>Pentru a clarifica funcționalitățile aplicației, am enumerat cerințele utilizatorilor, ordonându-le după importanță.</p>
+            
+            <figure typeof="sa:table">
+                <table id="tabel-user-stories">
+                    <tr>
+                        <th>Cerință</th>
+                        <th>Prioritate</th>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator neînregistrat doresc să îmi creez un cont.</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator neautentificat doresc să mă autentific.</td>
+                        <td>1</td>
+                    </tr>
+                     <tr>
+                        <td>Ca utilizator autentificat, sau nu, doresc să învăț regulile unui joc.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator autentificat doresc să îmi testez cunoștințele folosind testul.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator autentificat doresc să îmi compar scorul cu ceilalți utilizatori.</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator autentificat, sau nu, doresc să văd ponturi legate de joc.</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Ca utilizator autentificat, sau nu, doresc să aflu despre istoria jocului.</td>
+                        <td>3</td>
+                    </tr>
+                </table>
+            </figure>
+        </section>
+        
+        <section id="tehnologii">
+            <h2>4. Tehnologii folosite</h2>
+            <p>În cadrul dezvlotării proiectului vom folosi tehnologii moderne, ubicuue la nivelul industriei. Ca server de aplicații Web vom folosi <a href="#ref-xampp">XAMPP</a> deoarece este cross-platform, oferindu-ne o gamă largă de sisteme de operare pe care putem lucra.</p>
+            
+            <section id="front-end">
+                <h3>4.1 Front-end</h3>
+                <p>Deoarece componenta de front-end a proiectului (interfața) este simplă vom folosi doar ultimele versiuni ale standardelor HTML și CSS și limbaj de scriptare precum JavaScript. Pentru structurarea paginilor vom folosi HTML5 și pentru stilizarea paginilor vom folosi CSS3.</p>
+            </section>
+            
+            <section id="back-end">
+                <h3>4.2 Back-end</h3>
+                <p>Pentru dezvoltarea back-endului vom folosi:</p>
+                <ul>
+                    <li>MySQL pentru baza de date deoarece este open-source și des utilizat.</li>
+                    <li>PHP 7 ca limbaj de scriptare deoarece:</li>
+                    <ul>
+                        <li>are suport pentru Unicode (absolut necesar pentru o aplicație Web modernă)</li>
+                        <li>este mai performant decât versiunile anterioare</li>
+                        <li>are suport pentru variabile tari tipizate (folositor la depanare)</li>
+                    </ul>
+                </ul>
+            </section>
+        </section>
+        
+        <section id="detalii">
+            <h2>5. Detalii de implementare</h2>
+            <p>Există mai multe metode de implementare a funcționalităților descrise (<a href="#învătare">Învătarea</a>). Pentru a clarifica structura și modul de funcționare al aplicației vom prezenta arhitectura componentelor principale mai detaliat.</p>
+            
+            <section id="arhitectura">
+                <h3>5.1 Arhitectură</h3>
+                <p>Din punct de vedere arhitectural, aplicația este monolitică. Diferitele funcționalități precum interfața grafică, logica de lucru și accesul la date nu sunt separate pe diferite "straturi" ci sunt puternic cuplate. Aproape fiecare pagină este responsabilă pentru propria interfață grafică, logică și acces la date, singura excepție fiinđ folosirea unor pagini "template", pe care le încarcăm în fiecare pagină, pentru lizibilitate și ușurința mucii.</p>
+            </section>
+            
+            <section id="detalii-bd">
+                <h3>5.2 Schema bazei de date</h3>
+                <p>Aplicația fiind simplă, schema bazei de date este de asemenea simplă (4NF). Figura următoare resprezintă diagrama Entity-Relationship a tabelelor bazei de date.</p>
+                <figure typeof="sa:image">
+                    <img src="ER.png" style="width:120%;filter:contrast(100%);">
+					<br>
+					<img src="arhitectura.png" style="width:100%;filter:contrast(100%);">
+                </figure>
+            </section>
+            
+            <section id="repartizare">
+                <h3>5.3 Repartizarea sarcinilor</h3>
+                <ul>
+                    <li>Iacob Constantin-Cristian</li>
+                    <ul>
+                        <li>Structura și stilizarea paginilor</li>
+                        <li>Alegerea continutului(text și imagini)</li>
+                        <li>Arhitectura bazei de date</li>
+                        <li>Crearea quizului initial</li>
+                    </ul>
+                    <li>Gradinariu Tudor</li>
+                    <ul>
+                        <li>Implementarea ajax pe quiz</li>
+                        <li>Fluxul de date RSS din scoruri</li>
+                        <li>Modulul de administrare</li>
+                    </ul>
+                </ul>
+            </section>
+        </section>
+        
+        <section id="bibliografie">
+            <h2>6. Referințe</h2>
+            <dl>
+                <dt id="ref-proiecte">Lista de proiecte</dt>
+                <dd property="schema:citation" typeof="schema:ScholarlyArticle">
+                    <cite propery="schema:name"><a href="https://docs.google.com/document/d/185sVvu9tn-mLKWQaCT7vRBKMD1toFOidKlBXFLvxRKg/edit">Web Technologies - Project Proposals</a></cite>, de <span property="schema:autor" typeof="schema:Person"><span propery="shema:name">Ciprian Amariei</span></span>
+                </dd>
+                
+                <dt id="ref-xampp">XAMPP</dt>
+                <dd property="schema:citation" typeof="schema:ScholarlyArticle">
+                    <cite propery="schema:name"><a href="https://www.apachefriends.org/index.html">Apache + MariaDB + PHP + Perl</a></cite>
+                </dd>
+            </dl>
+        </section>
+    </article>
+</body>
+
+</html>
