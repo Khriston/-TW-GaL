@@ -31,8 +31,7 @@
 		<li><i>tudor.gradinariu@info,uaic.ro</i>, +407phonenumber - <b>Gradinariu Tudor</b></li>
 		</ul>
 		
-		<h3> The arhitecture:</h3>
-		<img src="images/arhitectura.jpg"/>
+		<a href="raport/raport.htm">Raport</a>
 		</section>
 		<aside>
 		</aside>
