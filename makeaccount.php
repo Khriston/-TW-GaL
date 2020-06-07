@@ -6,7 +6,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
-	<meta name="description" content="A website meant for new players into learning the game of Backgammon"/>
+	<meta name="description" content="A website meant for new players into learning the game of users"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="stylesheet.css" type="text/css" />
 
@@ -97,14 +97,14 @@
                     Passwords does not match! </div>';
                 return;
             }
-			$result = $db->query("select id from backgammon where name='".$username."'");
+			$result = $db->query("select id from users where name='".$username."'");
             if ($result->num_rows > 0){
                 echo '<div style="text-align: center;
                     margin-top: 5%;font-weight: bold;font-size:30px;color: red">
 					Username exists!</div';
                 return;
             }
-            $result = $db->query("select id from backgammon where email='".$email."'");
+            $result = $db->query("select id from users where email='".$email."'");
             if ($result->num_rows > 0){
                 echo '<div style="text-align: center;
                     margin-top: 5%;font-weight: bold;font-size:30px;color: red">E
@@ -114,7 +114,7 @@
 
 
 
-			$query = "INSERT INTO backgammon (ID,Name, Password, Email,Score) VALUES (NULL,'$username','$password1', '$email', NULL)";
+			$query = "INSERT INTO  (ID,Name, Password, Email,Score) VALUES (NULL,'$username','$password1', '$email', NULL)";
 			mysqli_query($db, $query);
 			$_SESSION['username'] = $username;
 			$_SESSION['success'] = "You are now logged in";

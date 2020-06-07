@@ -28,7 +28,7 @@
 		include 'connect.php';
 		$db = OpenCon();
 		$id = $_SESSION['id'];
-		$query = "SELECT * FROM backgammon where id='".$id."'";
+		$query = "SELECT * FROM users where id='".$id."'";
 		$result = $db->query($query);
 
 		if ($result->num_rows > 0) {

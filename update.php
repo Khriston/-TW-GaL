@@ -64,22 +64,22 @@
 			$id = $_POST['updateId'];
 		if(isset($_POST['updateName'])){
             $name = $_POST['updateName'];
-			$query = "UPDATE backgammon SET Name = '".$name."' where Id = '".$id."'";
+			$query = "UPDATE users SET Name = '".$name."' where Id = '".$id."'";
 			mysqli_query($db, $query);
 			}
 		if(isset($_POST['updatePassword'])){
 			$password = $_POST['updatePassword'];
-			$query = "UPDATE backgammon SET Password = '".$password."'  where Id='".$id."'";
+			$query = "UPDATE users SET Password = '".$password."'  where Id='".$id."'";
 			mysqli_query($db, $query);
 			}
 		if(isset($_POST['updateEmail'])){
 			$email = $_POST['updateEmail'];
-			$query = "UPDATE backgammon SET Email = '".$email."'  where Id='".$id."'";
+			$query = "UPDATE users SET Email = '".$email."'  where Id='".$id."'";
 			mysqli_query($db, $query);
 			}
 		if(isset($_POST['updateScore'])){
 			$score = $_POST['updateScore'];
-			$query = "UPDATE backgammon SET Score = '".$score."'  where Id='".$id."'";
+			$query = "UPDATE users SET Score = '".$score."'  where Id='".$id."'";
 			mysqli_query($db, $query);
 			}
 			

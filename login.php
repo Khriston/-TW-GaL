@@ -57,7 +57,7 @@
             $user = $_POST['user'];
             $password = $_POST['password'];
 			
-            $result = $db->query("select id, rights from backgammon where name='".$user."' and password='".$password."'");
+            $result = $db->query("select id, rights from users where name='".$user."' and password='".$password."'");
             if ($result->num_rows > 0){
                 $id = $result->fetch_row();
 				if($id[1] == true){

@@ -1,10 +1,10 @@
 <!DOCTYPE HTML>
 <head lang="en-US">
-	<title>Backgammon</title>
+	<title>users</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
-	<meta name="description" content="A website meant for new players into learning the game of Backgammon"/>
+	<meta name="description" content="A website meant for new players into learning the game of users"/>
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<?php
@@ -61,7 +61,7 @@
             $name = $_POST['updateName'];
 			$password = $_POST['updatePassword'];
 			$email = $_POST['updateEmail'];
-			$query = "INSERT INTO backgammon (ID,Name,PAssword,Email,Score,rights) VALUES (NULL,".$name.",".$password.",".$email.")";
+			$query = "INSERT INTO users (ID,Name,PAssword,Email,Score,rights) VALUES (NULL,".$name.",".$password.",".$email.")";
 			mysqli_query($db, $query);
 			}
 			else{
