@@ -25,7 +25,7 @@
 		<section class="slideshow-container">
 			<div id="slide">
 				<h2>Time to learn.</h2>
-				<img src="images/slide1.jpg"/>
+				<img src="imagesB/slide1.jpg"/>
 			</div>
 		</section>
 
