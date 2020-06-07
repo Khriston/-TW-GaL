@@ -1,8 +1,8 @@
 var slideNo = 0;
 var slideTimeout = 6000;
-var slideshowImages = ["images/slide1.jpg",
-	"images/slide2.jpg",
-	"images/slide3.jpg"];
+var slideshowImages = ["imagesB/slide1.jpg",
+	"imagesB/slide2.jpg",
+	"imagesB/slide3.jpg"];
 
 var slideshowHeaders = ["Fun",
 			"Smart",
