@@ -50,17 +50,17 @@
 		}
 	</style>
 	<?php
-		include 'connect.php';
+		include '../connect.php';
 		$db = OpenCon();
 		
-		$query = "SELECT * FROM backgammon order by 5 desc";
+		$query = "SELECT * FROM users order by 5 desc";
 		$result = $db->query($query);
 
 		if ($result->num_rows > 0) {
 		  echo "<table><tr><th>ID</th><th>Name</th><th>Email</th><th>Score</th></tr>";
 		  // output data of each row
 		  while($row = $result->fetch_assoc()) {
-			echo "<tr><td>".$row["ID"]."</td><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td> ".$row["Score"]."</td></tr>";
+			echo "<tr><td>".$row["ID"]."</td><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td> ".$row["ScoreD"]."</td></tr>";
 		  }
 		  echo "</table>";
 		} else {

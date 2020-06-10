@@ -27,18 +27,18 @@
 	<main class="paragraphs">
 		<h2>Ofthen made mistakes:</h2>
 			<l>
-				<p>1. Control the Center.</p>
-				<p>2. Checkers Is Not a Game That Can Be Won by Playing Defensively.</p>
-				<p>3. Your Goal Should Be Getting a Checker to the End of the Board.</p>
-				<p>4. Advance en Masse.</p>
-				<p>5. Be Willing to Sacrifice a Checker If Necessary.</p>
-				<p>6. Use Forced Moves to Your Advantage.</p>
-				<p>7. Leave Your Home Row Checkers Until You Need Them.</p>
-				<p>8. Trade Pieces When You Are Ahead.</p>
-				<p>9. Watch for Kings in the Endgame.</p>
-				<p>10. Finally, Remember the Blocking Option.</p>
+				<p>1. Running from the rear when behind in a race.</p>
+				<p>2. Candlestick making (stacking checkers on few points and general inflexible play)</p>
+				<p>3. Relinquishing key points to early. (5 point)</p>
+				<p>4. Doubling decisions how to evaluate a position etc.</p>
+				<p>5. Understanding safe vs bold play.</p>
+				<p>6. Filling holes instead of bearing-off men.</p>
+				<p>7. Hitting men just because you can.</p>
+				<p>8. Bearing-off incorrectly against opposition, either an anchor or on the bar.</p>
+				<p>9. Playing ultra-safe, especially in the opening.</p>
+				<p>10. Not Minimizing shots when it would be dangerous to be hit.</p>
 			</l>
-		<img src="imagesD/tips.jpg" width="600" height="400" style="max-width:100%;"/>
+		<img src="images/tips.jpg" width="600" height="400" style="max-width:100%;"/>
 			
 	</main>
 
