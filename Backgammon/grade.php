@@ -49,14 +49,14 @@
             if ($answer5 == "A") { $totalCorrect++; }
             
  
-            include 'connect.php';
+            include '../connect.php';
 
 			
 			if(isset($_SESSION['id']) && isset($_SESSION['user'])){	
 				$db = OpenCon();
                 $id = $_SESSION['id'];
                 $user = $_SESSION['user'];
-				$query = "UPDATE backgammon SET Score='$totalCorrect' where id='$id' and name='$user'";
+				$query = "UPDATE users SET ScoreB='$totalCorrect' where id='$id' and name='$user'";
 				mysqli_query($db, $query);
             }
 			
