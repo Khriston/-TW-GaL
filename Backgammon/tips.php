@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width-device-width, initial-scale=1.0"/>
 	<meta name="author" content="Iacob Constantin-Cristian, Gradinariu Tudor"/>
 	<meta name="description" content="A brief history of the game."/>
-	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+	<link rel="shortcut icon" href="imagesB/favicon.ico" type="image/x-icon"/>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
 	<link rel="stylesheet" href="aboutstylesheet.css" type="text/css"/>
 	
@@ -39,7 +39,7 @@
 				<p>9. Playing ultra-safe, especially in the opening.</p>
 				<p>10. Not Minimizing shots when it would be dangerous to be hit.</p>
 			</l>
-		<img src="images/tips.jpg" width="600" height="400" style="max-width:100%;"/>
+		<img src="imagesB/tips.jpg" width="600" height="400" style="max-width:100%;"/>
 			
 	</main>
 

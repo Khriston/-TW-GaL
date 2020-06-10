@@ -28,21 +28,16 @@
 	<main class="paragraphs">
 			<h1>History of the game:</h1>
 			
-			<p>Backgammon is one of the oldest known board games. Its history can be traced back nearly 5,000 years to archeological discoveries in Mesopotamia.<br></p>
-			<h3>Backgammon set from around the 10th century, China.</h3>
-				<img src="images/hist1.jpg" width="600" height="400" style="max-width:100%;"/>
-			<p>Remains of a board game from 3000 BC were found at Shahr-e Sukhteh in Iran. The artifacts included two dice and 60 checkers, and the set is believed to be 100 to 200 years older than the Royal Game of Ur. <br></p>
-			<h3>A game of τάβλη (tabula) played by Byzantine Emperor Zeno in 480.</h3>
-				<img src="images/hist2.jpg" width="600" height="400" style="max-width:100%;"/> 
-			<p>The game can be traced back nearly 5,000 years to its origins in Mesopotamia (modern-day Iraq). <br></p>
-			<h3>Roman Ludus duodecim scriptorum board from the 2nd century, Aphrodisias.</h3>
-				<img src="images/hist3.jpg" width="600" height="400" style="max-width:100%;"/>
-			<p>Tάβλη (tavli) meaning "table" or "board" in Byzantine Greek, is the oldest game with rules known to be nearly identical to backgammon; it is described in an epigram of Byzantine Emperor Zeno (AD 476–491).<br></p>
-			<h3>Medieval players, from the 13th century Carmina Burana.</h2>
-				<img src="images/hist4.jpg" width="600" height="400" style="max-width:100%;"/>
-			<p>The jeux de tables (Games of Tables), predecessors of modern backgammon, first appeared in France during the 11th century and became a favorite pastime of gamblers.<br></p>
-			<h3>A backgammon board retrieved from a sunken ship from the 1600s.</h3>
-				<img src="images/hist5.jpg" width="600" height="400" style="max-width:100%;"/>
+			<p>Checkers or draughts is the name of several different board games. All of these games are similar. In every kind of checkers, the other player’s pieces can be taken by being “jumped” over. “Checkers” is the American name. In British English, and in various other English-speaking nations, these games are called “Draughts“<br></p>
+			<h3>Sculpture of egiptians playng an older form of checkers.</h3>
+				<img src="imagesD/hist1.jpg" width="600" height="400" style="max-width:100%;"/>
+			<p>Though most people do not know it, the game we know today as Draughts has a long and storied history. From ancient Egypt to your own living room, Draughts has remained a popular pastime for most of recorded history.<br></p>
+			<h3>Oficial match of Draughts</h3>
+				<img src="imagesD/hist2.jpg" width="600" height="400" style="max-width:100%;"/> 
+			<p>Historians place the invention of “modern” Draughts in the 12th century CE, when someone, somewhere (probably in the south of France) combined the rules and pieces of Alquerque with the 8×8 grid of a common chessboard. They called the game Fierges, and the pieces “ferses,” the same name given to the queen in Chess; at that time the queen moved like a Fierges piece, one space at a time. Later, Ferses also became a name for the game, and by the 15th century both Fierges and Ferses had been replaced by the name Jeu De Dames, or simply Dames.<br></p>
+			<h3>Mauritanian checkers</h3>
+				<img src="imagesD/hist3.jpg" width="600" height="400" style="max-width:100%;"/>
+			
 	</main>
 
 	<?php
