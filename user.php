@@ -22,7 +22,7 @@
         include("Header.php"); 
         include("Navbar.php");
     ?>
-	
+
 
 	<?php
 		include 'connect.php';
@@ -30,17 +30,32 @@
 		$id = $_SESSION['id'];
 		$query = "SELECT * FROM users where id='".$id."'";
 		$result = $db->query($query);
-		
+
 		if ($result->num_rows > 0) {
 			$row = $result->fetch_assoc();
 			echo "<h2>Name: ".$row["ID"].". ".$row["Name"]."";
 			echo "<br>";
 			echo "Email adress: ".$row["Email"]."";
 			echo "<br>";
-			print  '<button type="button" onclick="exports()">Export</button>';
+			print '<div id="user"><button type="button" onclick="exportdata('.$row["ID"].')">Export</button>
+				</div>';
 		}
 		include("Footer.php");
 	?>
+	
+	<script>
+	function exportdata(id) {
+	  var xhttp = new XMLHttpRequest();
+	  xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  document.getElementById("user").innerHTML =
+		  this.responseText;
+		}
+	  };
+	  xhttp.open("GET", "ajax_export.php?id=" + id, true);
+	  xhttp.send();
+	}
+	</script>
 </body>
 
 </html>
