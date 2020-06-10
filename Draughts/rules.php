@@ -35,26 +35,38 @@ A doubling cube with the numbers 2, 4, 8, 16, 32, 64 is used for tracking the st
 
 The board consists of 24 long triangles called points or pips. The triangles alternate in color and are divided into four quadrants of six triangles each. The four quadrants are the player’s home board and outer board, and the opponent’s home board and outer board. The home boards and outer boards are separated by a divider down the middle referred to as the bar. The starting positions of the pieces are arranged as shown below.<br></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<img src="images/rl1.jpg" style="max-width:100%;"/>
 			<h2>Gameplay</h2>
 			<p>To start the game, each player rolls a single die and the player with the higher number moves first using both numbers rolled. If both players roll the same number, the dice are rolled again until they roll different numbers. The players then alternate turns, rolling two dice at the beginning of each turn. The dice must always be rolled together and land flat on the right hand side of the game board. If it lands outside or on a checker the dice must be rolled again.<br></p>
 				<img src="images/rl2.jpg" style="max-width:100%;"/>
 				<img src="images/rl3.jpg" style="max-width:100%;"/>
 =======
+=======
+>>>>>>> parent of 8d37f5b... added checkers details
 				<img src="imagesD/rl1.jpg" style="max-width:100%;"/>
 			<h2>Gameplay</h2>
 			<p>To start the game, each player rolls a single die and the player with the higher number moves first using both numbers rolled. If both players roll the same number, the dice are rolled again until they roll different numbers. The players then alternate turns, rolling two dice at the beginning of each turn. The dice must always be rolled together and land flat on the right hand side of the game board. If it lands outside or on a checker the dice must be rolled again.<br></p>
 				<img src="imagesD/rl2.jpg" style="max-width:100%;"/>
 				<img src="imagesD/rl3.jpg" style="max-width:100%;"/>
+<<<<<<< HEAD
+>>>>>>> parent of 8d37f5b... added checkers details
+=======
 >>>>>>> parent of 8d37f5b... added checkers details
 			<h2>Moving</h2>
 			<p>The dice roll determines how many points the player is supposed to move its checker. The checker always moves forward following the horseshoe path towards the player’s home board.
 A point that is not occupied by two or more opposing checkers is an open point. When moving a checker it may land only on an open point.
 The two dice constitute two separate movements. For example, if a player rolls a 6 and a 4, he may move one checker 6 spaces to an open point and another checker 4 spaces to an open point.<br></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<img src="images/rl4.jpg" style="max-width:100%;"/>
 			<p>The player may also choose to move the same checker twice, as long as each move is on to an open point.<br></p>
 				<img src="images/rl5.jpg" style="max-width:100%;"/>
+=======
+				<img src="imagesD/rl4.jpg" style="max-width:100%;"/>
+			<p>The player may also choose to move the same checker twice, as long as each move is on to an open point.<br></p>
+				<img src="imagesD/rl5.jpg" style="max-width:100%;"/>
+>>>>>>> parent of 8d37f5b... added checkers details
 =======
 				<img src="imagesD/rl4.jpg" style="max-width:100%;"/>
 			<p>The player may also choose to move the same checker twice, as long as each move is on to an open point.<br></p>
@@ -67,7 +79,11 @@ A player must move both numbers rolled if possible (four numbers if a double is 
 
 When a player has one or more checkers on the bar he must first re-enter them onto the opponent’s home board. A checker enters by rolling two dice and moving it to the corresponding point of one of the numbers on the opponent’s home board.<br></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<img src="images/rl6.jpg" style="max-width:100%;"/>
+=======
+			<img src="imagesD/rl6.jpg" style="max-width:100%;"/>
+>>>>>>> parent of 8d37f5b... added checkers details
 =======
 			<img src="imagesD/rl6.jpg" style="max-width:100%;"/>
 >>>>>>> parent of 8d37f5b... added checkers details
@@ -77,9 +93,15 @@ When a player has one or more checkers on the bar he must first re-enter them on
 
 If no checker can bear off with the number(s) rolled, the player must make a legal move(s) with a checker(s) from a higher point.<br></p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<img src="images/rl7.jpg" style="max-width:100%;"/>
 			<p>If there are no checkers on higher number points, then the player bears off with a checker from the next highest point.<br></p>
 			<img src="images/rl8.jpg" style="max-width:100%;"/>
+=======
+			<img src="imagesD/rl7.jpg" style="max-width:100%;"/>
+			<p>If there are no checkers on higher number points, then the player bears off with a checker from the next highest point.<br></p>
+			<img src="imagesD/rl8.jpg" style="max-width:100%;"/>
+>>>>>>> parent of 8d37f5b... added checkers details
 =======
 			<img src="imagesD/rl7.jpg" style="max-width:100%;"/>
 			<p>If there are no checkers on higher number points, then the player bears off with a checker from the next highest point.<br></p>

@@ -31,6 +31,7 @@
 			<p>Backgammon is one of the oldest known board games. Its history can be traced back nearly 5,000 years to archeological discoveries in Mesopotamia.<br></p>
 			<h3>Backgammon set from around the 10th century, China.</h3>
 <<<<<<< HEAD
+<<<<<<< HEAD
 				<img src="images/hist1.jpg" width="600" height="400" style="max-width:100%;"/>
 			<p>Remains of a board game from 3000 BC were found at Shahr-e Sukhteh in Iran. The artifacts included two dice and 60 checkers, and the set is believed to be 100 to 200 years older than the Royal Game of Ur. <br></p>
 			<h3>A game of τάβλη (tabula) played by Byzantine Emperor Zeno in 480.</h3>
@@ -45,6 +46,8 @@
 			<h3>A backgammon board retrieved from a sunken ship from the 1600s.</h3>
 				<img src="images/hist5.jpg" width="600" height="400" style="max-width:100%;"/>
 =======
+=======
+>>>>>>> parent of 8d37f5b... added checkers details
 				<img src="imagesD/hist1.jpg" width="600" height="400" style="max-width:100%;"/>
 			<p>Remains of a board game from 3000 BC were found at Shahr-e Sukhteh in Iran. The artifacts included two dice and 60 checkers, and the set is believed to be 100 to 200 years older than the Royal Game of Ur. <br></p>
 			<h3>A game of τάβλη (tabula) played by Byzantine Emperor Zeno in 480.</h3>
@@ -58,6 +61,9 @@
 			<p>The jeux de tables (Games of Tables), predecessors of modern backgammon, first appeared in France during the 11th century and became a favorite pastime of gamblers.<br></p>
 			<h3>A backgammon board retrieved from a sunken ship from the 1600s.</h3>
 				<img src="imagesD/hist5.jpg" width="600" height="400" style="max-width:100%;"/>
+<<<<<<< HEAD
+>>>>>>> parent of 8d37f5b... added checkers details
+=======
 >>>>>>> parent of 8d37f5b... added checkers details
 	</main>
 
