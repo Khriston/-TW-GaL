@@ -54,13 +54,15 @@
 		$db = OpenCon();
 		
 		$query = "SELECT * FROM users order by 5 desc";
-		$result = $db->query($query);
+		$result =  mysqli_query($db, $query);
 
 		if ($result->num_rows > 0) {
 		  echo "<table><tr><th>ID</th><th>Name</th><th>Email</th><th>Score</th></tr>";
 		  // output data of each row
-		  while($row = $result->fetch_assoc()) {
+		  while($row = mysqli_fetch_array($result)) {
+			  if($row[6]!=0){
 			echo "<tr><td>".$row["ID"]."</td><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td> ".$row["ScoreT"]."</td></tr>";
+			  }
 		  }
 		  echo "</table>";
 		} else {

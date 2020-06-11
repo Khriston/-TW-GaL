@@ -55,13 +55,15 @@
 		$db = OpenCon();
 		
 		$query = "SELECT * FROM users order by 5 desc";
-		$result = $db->query($query);
+		$result =  mysqli_query($db, $query);
 
 		if ($result->num_rows > 0) {
 		  echo "<table><tr><th>ID</th><th>Name</th><th>Email</th><th>Score</th></tr>";
 		  // output data of each row
-		  while($row = $result->fetch_assoc()) {
+		  while($row = mysqli_fetch_array($result)) {
+			  if($row[4]!=0){
 			echo "<tr><td>".$row["ID"]."</td><td>".$row["Name"]."</td><td>".$row["Email"]."</td><td> ".$row["ScoreB"]."</td></tr>";
+			  }
 		  }
 		  echo "</table>";
 		} else {
@@ -69,19 +71,7 @@
 		}
 		include("Footer.php");
 	?>
-	<script>
-	function export() {
-	  var xhttp = new XMLHttpRequest();
-	  xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-		  document.getElementById("page-wrap").innerHTML =
-		  this.responseText;
-		}
-	  };
-	  xhttp.open("GET", "ajax_export.php", true);
-	  xhttp.send();
-	}
-	</script>
+
 </body>
 
 </html>
